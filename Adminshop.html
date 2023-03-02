@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Camer Market</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <section id="header">
+            <a href="#"><img src="img/products/final2.png" class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Log out </a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html ">Contact</a></li>
+                    <li id="lg-bag"><a href="addProducts.html"><i class="fa fa-plus-square" aria-hidden="true"></i></a></li>
+                    <li><a href="Dashboard.html">Dashboard</a></li>
+                    <li><a href="addCategory.html">Add or delete Categories</a></li>
+                    <a href="" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+            </div>
+        </section>
+
+
+        <section id="page-header">
+
+           
+            <h2>#237Market</h2>
+           
+            <p>Save more with coupons </p>
+            
+        </section>
+
+        <section id="product1" class="section-p1">
+            <div>
+                <div class="wrapper">
+                    <div class="search_box">
+                        <div class="search_btn"><i class="fas fa-search"></i></div>
+                        <input type="text" class="input_search" placeholder="What are you looking for?" id="searchBar">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="categoryDiv">
+                 <div class="btn_value btn" onclick="filterProduct('all')">all</div>
+              <!---  <div class="btn_value btn" onclick="filterProduct('shoes')">Shoes</div>
+                <div class="btn_value btn" onclick="filterProduct('Jewel')">Jewel</div>
+                <div class="btn_value btn" onclick="filterProduct('Bags')">Bags</div>
+                <div class="btn_value btn" onclick="filterProduct('Clothes')">Clothes</div>
+                <div class="btn_value btn" onclick="filterProduct('spices')">spices</div> -->
+            </div>
+           
+            <div class="pro-container" id="allproducts">
+                
+                <!-- <div class="pro clothes all">
+                    <img src="img/products/f2.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro clothes all">
+                    <img src="img/products/f3.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro bijou all">
+                    <img src="img/products/f4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro bijou all">
+                    <img src="img/products/f5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro shoes all">
+                    <img src="img/products/f6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro shoes all">
+                    <img src="img/products/f7.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro clothes all">
+                    <img src="img/products/f8.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro bijou all">
+                    <img src="img/products/n1.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro boucles all">
+                    <img src="img/products/n2.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro bracelet all">
+                    <img src="img/products/n3.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro bracelet all">
+                    <img src="img/products/n4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro montre all">
+                    <img src="img/products/n5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro montre all">
+                    <img src="img/products/n6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro bags all">
+                    <img src="img/products/n7.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro bags all">
+                    <img src="img/products/n8.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="editProduct">
+          
+        </section>
+
+        <footer class="section-p1">
+        <div class="col">
+            <img class = "logo" src="img/products/final2.png" alt="">
+            <h4>Contact</h4>
+            
+            <p><strong>Adress:</strong> Bastos,Yaounde</p>
+            <p><strong>Phone:</strong> +237 656 37 07 97 / +237 6 90 13 26 87</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat </p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <!-- <div class="icon">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div> -->
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+</div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About </h4>
+            <a href="">About us</a>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href=""> Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account </h4>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Whishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+        </div>
+
+        
+
+        <div class="copyright">
+            <p>© 2023, Groupe2 </p>
+        </div>
+        </footer>
+
+
+        <script>
+            /*IL FAUT QUE L'ORSQUE L'UTILISATEUR CLIQUE SUR UN BOUTON, QUE CA ME DONNE UNIQUEMENT LES PRODUITS DE CETTE CATEGORIES*/
+            function filterProduct(value)
+            {
+                const allButtons = document.getElementsByClassName("btn_value");
+                const allProduct = document.getElementsByClassName("pro");
+                 console.log(allProduct);
+                for (let i = 0 ; i < allProduct.length ; i++)
+                {
+                    if (allProduct[i].classList.contains(value.toLowerCase()))
+                    {
+
+                       console.log(allProduct[i]);
+                       allProduct[i].classList.remove("hide");
+                       
+                    }
+                    else
+                    {
+                        allProduct[i].classList.add("hide");
+                    }
+                }
+
+
+            }
+        </script>
+
+
+
+                <!--Script modules-->
+
+                
+                <script type="module" src="SCRIPT/database.js"> </script>
+
+                <!--SEARCH MODULES-->
+
+                <script type="module" src="SCRIPT/searchBar.js"> </script>
+        
+                <script type="module" src="SCRIPT/Usersearch.js"> </script>
+
+                <script type="module" src="SCRIPT/addProduct.js"> </script>
+        
+                <script type="module" src="SCRIPT/products.js"> </script>
+
+                <script type="module" src="SCRIPT/addCategory.js"> </script>
+        
+                <script type="module" src="SCRIPT/DisplayCategories.js"> </script>
+        <script src="script.js"></script>
+
+
+    </body>
+
+</html>
