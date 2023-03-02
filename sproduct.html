@@ -8,18 +8,281 @@
         <title>Tech2etc Ecommerce Tutorial</title>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+ integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
+        <section id="header">
+            <a href="#"><img src="img/products/final2.png" class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Log out </a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html ">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <a href="" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/products/f1.jpg" width="100%" class = "small-img" alt="" onclick="getSrc()">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f2.jpg" width="100%" class = "small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f3.jpg" width="100%" class = "small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f4.jpg" width="100%" class = "small-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-pro-details">
+                <h6>Home / T-Shirt</h6>
+                <h4>Men's Fashion T-Shirt</h4>
+                <h2>$129.00</h2>
+                <select name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                    <option value="">Small</option>
+                    <option value="">Large</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. </span>
+            
+                <p>H</p>
+            </div>
+
+        </section>
+
+        <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <p>Summer Collection New Morden Design</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="img/products/f1.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="img/products/f2.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="img/products/f3.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+                <div class="pro">
+                    <img src="img/products/f4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a class = "cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+               
+            </div>
+        </section>
+        
+        <section id="newsletter" class="section-p1 section-m1"> 
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and  <span>| special offers.</span></p>
+
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+        <div class="col">
+            <img class = "logo" src="img/products/final2.png" alt="">
+            <h4>Contact</h4>
+            
+            <p><strong>Adress:</strong> Bastos,Yaounde</p>
+            <p><strong>Phone:</strong> +237 656 37 07 97 / +237 6 90 13 26 87</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat </p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <!-- <div class="icon">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div> -->
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About </h4>
+            <a href="">About us</a>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href=""> Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account </h4>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Whishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Groupe2 </p>
+        </div>
+        </footer>
 
         <script>
             // script for image change on click
+
+            // var MainImg = document.getElementsByClassName("MainImg");
+            // console.log(MainImg);
+            // var smallimg = document.getElementsByClassName("small-img");
+            // console.log(smallimg[0].attributes[0].nodeValue);
+            // smallimg[1].onclick = function(){
+            //     // MainImg.src = smallimg[1].attributes[0].nodeValue;
+            // alert('hello');
+            // }
+            // smallimg[0].onclick = function(){
+            //     MainImg.src = smallimg[0].attributes[0].nodeValue;
+            // }
+            // smallimg[2].onclick = function(){
+            //     MainImg.src = smallimg[2].attributes[0].nodeValue;
+            // }
+            // smallimg[3].onclick = function(){
+            //     MainImg.src = smallimg[3].attributes[0].nodeValue;
+            // }
+
+           
         </script>
 
 
-        <script src="script.js"></script>
+
+
+
+ <!--Script modules-->
+
+                
+ <script type="module" src="SCRIPT/database.js"> </script>
+
+ 
+
+ <script type="module" src="SCRIPT/CustomerSingleProducts.js"> </script>
+
+ <script type="module" src="SCRIPT/SingleProducts.js"> </script>
+
+ <script type="module" src="SCRIPT/getDataSet.js"> </script>
+
+ <script type="module" src="SCRIPT/touchImage.js"> </script>
+
+ <script type="module" src="SCRIPT/searchClickBtn.js"> </script>
+
+ <!--<script type="module" src="SCRIPT/Cart.js"> </script> -->
+
+ <script type="module" src="SCRIPT/removeQtyy.js"> </script>
+
+ <script type="module" src="SCRIPT/star.js"> </script>
+
+ <script type="module" src="SCRIPT/getStars.js"> </script>
+
+ <script type="module" src="SCRIPT/getStarsProduct.js"> </script>
+
+ <script type="module" src="SCRIPT/CustomeStars.js"> </script> 
+
+ <script type="module" src="SCRIPT/Cart_sproducts.js"> </script>
+
+ <script type="module" src="SCRIPT/Add_to_Cart.js"> </script>
+
+ <script type="module" src="SCRIPT/setSingleProductClicked.js"> </script>
+
+ <script type="module" src="SCRIPT/GetClickBtnInfo.js"> </script>
+
+
+
+<script src="script.js"></script>
     </body>
 
 </html>
