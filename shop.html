@@ -7,13 +7,188 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tech2etc Ecommerce Tutorial</title>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
+        <section id="header">
+            <a href="#"><img src="img/products/final2.png" class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Log out </a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html ">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <a href="" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+            </div>
+        </section>
+
+<section id="all">
+
+
+        <section id="page-header">
+
+           
+            <h2>#Stayhome</h2>
+           
+            <p>Save more with coupons & up to 70%  off!</p>
+            
+        </section>
+
+        <section id="product1" class="section-p1">
+            <div>
+                <div class="wrapper">
+                    <div class="search_box">
+                        <div class="search_btn"><i class="fas fa-search"></i></div>
+                        <input type="text" class="input_search" placeholder="What are you looking for?" id="searchBar">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="categoryDiv">
+                <div class="btn_value btn" onclick="filterProduct('all')">all</div>
+                
+            </div>
+           
+            <div class="pro-container" id="products">
+                
+            </div>
+        </section>
+
+        <section id="editProduct">
+          
+        </section>
+    </section>
+        <footer class="section-p1">
+        <div class="col">
+            <img class = "logo" src="img/products/final2.png" alt="">
+            <h4>Contact</h4>
+            
+            <p><strong>Adress:</strong> Bastos,Yaounde</p>
+            <p><strong>Phone:</strong> +237 656 37 07 97 / +237 6 90 13 26 87</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat </p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <!-- <div class="icon">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div> -->
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+</div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About </h4>
+            <a href="">About us</a>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href=""> Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account </h4>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Whishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+        </div>
+
+        
+
+        <div class="copyright">
+            <p>© 2023, Groupe2 </p>
+        </div>
+        </footer>
+
+
+        <script>
+            /*IL FAUT QUE L'ORSQUE L'UTILISATEUR CLIQUE SUR UN BOUTON, QUE SA ME DONNE UNIQUEMENT LES PRODUITS DE CETTE CATEGORIES*/
+            function filterProduct(value)
+            {
+                const allButtons = document.getElementsByClassName("btn_value");
+                const allProduct = document.getElementsByClassName("pro");
+                // console.log(allProduct);
+                for (let i = 0 ; i < allProduct.length ; i++)
+                {
+                    if (allProduct[i].classList.contains(value.toLowerCase()))
+                    {
+
+                       console.log(allProduct[i]);
+                       allProduct[i].classList.remove("hide");
+                       
+                    }
+                    else
+                    {
+                        allProduct[i].classList.add("hide");
+                    }
+                }
+
+
+            }
+        </script>
+
+
+
+                <!--Script modules-->
+
+                
+                <script type="module" src="SCRIPT/database.js"> </script>
+
+                
+                <script type="module" src="SCRIPT/CustomerSingleProducts.js"> </script>
+        
+                <script type="module" src="SCRIPT/SingleProducts.js"> </script>
+
+
+                <!--SEARCH MODULES-->
+
+                <script type="module" src="SCRIPT/searcShopCustomer.js"> </script>
+        
+                <script type="module" src="SCRIPT/Customerproductsearch.js"> </script>
+
+                <script type="module" src="SCRIPT/addCustomerProduct.js"> </script>
+        
+                <script type="module" src="SCRIPT/Customerproducts.js"> </script>
+
+                <script type="module" src="SCRIPT/getDataSet.js"> </script>
+
+                <script type="module" src="SCRIPT/TabTabCart.js"> </script>
+
+                <script type="module" src="SCRIPT/GetIndex.js"> </script>
+
+                <script type="module" src="SCRIPT/addCategory.js"> </script>
+
+                <script type="module" src="SCRIPT/DisplayCategories.js"> </script>
+
+
+
+              
+               
+
+
+                
         <script src="script.js"></script>
+
+
     </body>
 
 </html>
