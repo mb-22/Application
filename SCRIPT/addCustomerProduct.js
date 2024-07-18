@@ -193,7 +193,7 @@ export class Product
                 ` <img src="img/products/${products.fileName}" alt="">
                 <div class="des">
                     <span>${products.category}</span>
-                    <h5>${products.TradName}</h5>
+                    <h5>${products.code}</h5>
                     <div class="star">
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
